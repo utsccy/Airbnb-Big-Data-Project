@@ -56,6 +56,8 @@ predictions = algo.test(testset)
 # Then compute RMSE
 accuracy.rmse(predictions)
 #0.4722348599764088
+
+#Using SVDpp
 from surprise import SVDpp
 algo = SVDpp(n_factors=10,n_epochs=10)
 algo.fit(trainset)
